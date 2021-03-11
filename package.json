@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/natashamullin/blog-me/issues"
   },
-  "homepage": "https://github.com/natashamullin/blog-me#readme"
+  "homepage": "https://github.com/natashamullin/blog-me#readme",
+  "devDependencies": {}
 }
