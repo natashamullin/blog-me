@@ -1,12 +1,12 @@
-const { Sequelize, odel, DataTypes } = require('sequelize');
+const { Sequelize, Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
 class Comment extends Model { }
 
-comment.init(
+Comment.init(
     {
         body: {
-            type: DataTypes.String,
+            type: DataTypes.STRING,
             allowNull: false
         }
     },

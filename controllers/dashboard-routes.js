@@ -11,7 +11,7 @@ router.get('/', withAuth, (req, res) => {
         .then(dbPostData => {
             const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-            res.render('all-post-admin', {
+            res.render('all-posts-admin', {
                 layout: "dashboard",
                 posts
             });
@@ -22,6 +22,13 @@ router.get('/', withAuth, (req, res) => {
         });
 
 });
+
+router.get("/new", withAuth, (req, res) => {
+    res.render("new-post", {
+        layout: "dashboard"
+    });
+});
+
 
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findByPk(req.params.id)

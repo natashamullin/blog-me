@@ -4,13 +4,13 @@ const { Sequelize, Model, DataTypes } = require('sequelize')
 
 class Post extends Model { }
 
-post.init(
+Post.init(
     {
-        title: DataTypes.String,
-        body: DataTypes.String
+        title: DataTypes.STRING,
+        body: DataTypes.STRING
     },
     {
-        Sequelize
+        sequelize
     }
 );
 
