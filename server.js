@@ -18,7 +18,7 @@ const sess = {
         db: sequelize
     })
 };
-
+// https://mysterious-falls-58120.herokuapp.com/ | https://git.heroku.com/mysterious-falls-58120.git heroku
 app.use(session(sess));
 
 const hbs = exphbs.create({
